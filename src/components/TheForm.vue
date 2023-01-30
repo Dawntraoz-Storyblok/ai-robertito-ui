@@ -8,7 +8,7 @@
           <span class="text-md">Ask your question to the master.</span>
         </label>
         <input id="question" name="question" type="search" placeholder="Type here" class="input input-bordered w-full max-w-xs" autocomplete="on" v-model="question" />
-        <button type="submit" class="btn btn-ghost btn-circle -translate-x-12 translate-y-1">
+        <button type="submit" @click="aiQuestion" class="ml-4 btn btn-circle btn-primary-focus text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -34,7 +34,8 @@ const aiQuestion = () => {
   )
     .then(async response => {
       results.value = (await response.json()).answer
-    });
+    })
+    .catch(() => results.value = 'You need to run the server first. Clone [rfp-responder](https://github.com/roberto-butti/rfp-responder/) and run `npm i && node server.js`');
 }
 </script>
 
