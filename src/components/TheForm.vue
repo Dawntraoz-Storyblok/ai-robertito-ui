@@ -1,7 +1,7 @@
 <template>
   <form type="submit" class="container mx-auto max-w-4xl" @submit.prevent="aiQuestion">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-4xl mx-auto py-6 md:py-10">
-      <img src="../assets/ai_robertito.png" class="mx-auto w-64 md:w-auto max-w-full rounded-full shadow-2xl" />
+      <img src="../assets/ai_robertito.webp" class="mx-auto w-64 md:w-auto max-w-full rounded-full shadow-2xl" />
       <div class="text-center md:text-start">
         <h1 class="text-5xl font-bold">AI Robertito</h1>
         <label for="question" class="block py-3">
