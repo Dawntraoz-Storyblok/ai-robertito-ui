@@ -1,19 +1,16 @@
 <script setup lang="ts">
-  import { RouterLink, RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router'
+  import TheHeader from './components/TheHeader.vue'
+  import TheFooter from './components/TheFooter.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Storyblok Logo" class="logo" src="@/assets/logo.svg" width="158" height="33" />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div class="min-h-screen flex flex-col">
+    <TheHeader />
+    <RouterView />
+    <TheFooter class="mt-auto" />
+  </div>
 </template>
 
 <style scoped>
