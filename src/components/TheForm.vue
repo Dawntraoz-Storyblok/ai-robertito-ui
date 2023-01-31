@@ -26,10 +26,13 @@ import Markdown from 'vue3-markdown-it';
 
 const question = ref();
 const results = ref();
+const apiUrl = function () {
+  return window.location.hostname === "localhost" ? "http://localhost:9000" : `https://${window.location.hostname}/.netlify/functions`;
+}
 
 const aiQuestion = () => {
   fetch(
-    `http://localhost:3000/question?question=${question.value}`,
+    `${apiUrl()}/question?question=${question.value}`,
     { headers: { 'Content-Type': 'application/json' } },
   )
     .then(async response => {
