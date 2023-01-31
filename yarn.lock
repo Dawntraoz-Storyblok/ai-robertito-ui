@@ -158,7 +158,7 @@
 
 "@nlpjs/basic@^4.26.1":
   version "4.26.1"
-  resolved "https://registry.npmjs.org/@nlpjs/basic/-/basic-4.26.1.tgz"
+  resolved "https://registry.yarnpkg.com/@nlpjs/basic/-/basic-4.26.1.tgz#6a7ec7badb3a6e0d96b3866687ca24fe61c622e8"
   integrity sha512-Zzi9jPuaGm48mgORe9gKG6VCEgkvM/5h/WTzl6vRy7WRMkoyJEE7FnR3Nb7vQEm0N7R8FyGNpaqGDsJhEQHLvA==
   dependencies:
     "@nlpjs/console-connector" "^4.26.1"
@@ -274,6 +274,11 @@
     "@nlpjs/language-min" "^4.25.0"
     "@nlpjs/neural" "^4.25.0"
     "@nlpjs/similarity" "^4.26.1"
+
+"@nlpjs/qna-importer@^4.22.7":
+  version "4.22.7"
+  resolved "https://registry.yarnpkg.com/@nlpjs/qna-importer/-/qna-importer-4.22.7.tgz#f5b42f65b73d89b70317a336dc15921830c45616"
+  integrity sha512-eFbH5ATgoZNSVkl4jOWjFXYaP1XylQHJw2J36y63hcGR5xwX2QcWzkG/YeGjga6OBgbCl3DbqT4vwkb3K/S59Q==
 
 "@nlpjs/request@^4.25.0":
   version "4.25.0"
