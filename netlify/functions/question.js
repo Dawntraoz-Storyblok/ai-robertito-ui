@@ -1,6 +1,7 @@
 const { containerBootstrap } = require('@nlpjs/core');
 const { Nlp } = require('@nlpjs/nlp');
 const { LangEn } = require('@nlpjs/lang-en');
+const { QnaImporter } = require('@nlpjs/qna-importer')
 const { dockStart, ConsoleConnector } = require('@nlpjs/basic');
 const path = require("path");
 
