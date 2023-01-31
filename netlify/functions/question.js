@@ -22,7 +22,8 @@ exports.handler = async function (event, context) {
         } else {
             //return;
         }
- //   })();
+//    })();
+
     question = event.queryStringParameters.question
 
     console.log(question)
@@ -63,7 +64,9 @@ exports.handler = async function (event, context) {
             { answer: data,
                 question: question,
                 answerCode: answer,
-                response: response
+                response: response,
+                dirname: __dirname,
+                localDir: localDir
              }),
     };
 };
