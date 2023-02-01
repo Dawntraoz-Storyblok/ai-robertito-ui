@@ -1,2 +1,5 @@
 [build]
   functions = "functions"
+
+[functions.question]
+  included_files = ["model.nlp", "content/**.md"]
