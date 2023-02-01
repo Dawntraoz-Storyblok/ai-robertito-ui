@@ -7,7 +7,7 @@
         <label for="question" class="block py-3">
           <span class="text-md">Ask your question to the master.</span>
         </label>
-        <input id="question" name="question" type="search" placeholder="Type here" class="input input-bordered w-full max-w-xs" autocomplete="on" v-model="question" />
+        <input id="question" name="question" type="search" placeholder="What is your question? 🤌" class="input input-bordered w-full max-w-xs" autocomplete="on" v-model="question" />
         <button type="submit" @click="aiQuestion" class="ml-4 btn btn-circle btn-primary-focus text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -27,7 +27,7 @@ import Markdown from 'vue3-markdown-it';
 const question = ref();
 const results = ref();
 const apiUrl = function () {
-  return window.location.hostname === "localhost" ? "http://localhost:9000" : `https://${window.location.hostname}/.netlify/functions`;
+  return window.location.hostname === "localhost" ? "http://localhost:9000" : `https://${window.location.hostname}/functions`;
 }
 
 const aiQuestion = () => {

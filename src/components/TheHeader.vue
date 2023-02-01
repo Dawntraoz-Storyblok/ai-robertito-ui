@@ -1,7 +1,7 @@
 <template>
   <header class="navbar bg-primary">
     <div class="navbar-start">
-      <a href="/" class="">
+      <a href="/" class="pl-2">
         <img
           alt="Storyblok Logo"
           class=""
