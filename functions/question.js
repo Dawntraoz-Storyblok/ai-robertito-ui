@@ -16,8 +16,8 @@ exports.handler = async function (event, context) {
 //    (async () => {
         dock = await dockStart({ use: ['Basic', 'Qna'], nlu: { useNoneFeature: false } });
         nlp = await dock.get('nlp');
-        if (fs.existsSync(localDir + '/model.nlp')) {
-            await nlp.load(localDir +'/model.nlp');
+        if (fs.existsSync('./model.nlp')) {
+            await nlp.load('./model.nlp');
             console.log(nlp)
         } else {
             //return;
@@ -41,7 +41,7 @@ exports.handler = async function (event, context) {
     try {
 
         answer = answer.replace(".", "/")
-        data = fs.readFileSync(localDir + '/content/' + answer + '.md', 'utf8');
+        data = fs.readFileSync('./content/' + answer + '.md', 'utf8');
         console.log('💫💫💫💫💫💫💫💫💫💫💫💫💫')
         console.log(data);
         console.log('💫💫💫💫💫💫💫💫💫💫💫💫💫')
