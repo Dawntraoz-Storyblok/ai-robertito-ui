@@ -27,7 +27,7 @@ import Markdown from 'vue3-markdown-it';
 const question = ref();
 const results = ref();
 const apiUrl = function () {
-  return window.location.hostname === "localhost" ? "http://localhost:9000" : `https://${window.location.hostname}/functions`;
+  return window.location.hostname === "localhost" ? "http://localhost:9000" : `https://${window.location.hostname}/.netlify/functions`;
 }
 
 const aiQuestion = () => {
